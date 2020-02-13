@@ -29,7 +29,7 @@
         app:srcCompat="@drawable/logo_hack" />
 
     <Button
-        android:id="@+id/btnEntrar"
+        android:id="@+id/btnEntrarActivityLogin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
@@ -40,21 +40,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtSenha" />
+        app:layout_constraintTop_toBottomOf="@+id/edtSenhaActivityLogin" />
 
     <Button
-        android:id="@+id/btnCadastrar"
+        android:id="@+id/btnCadastrarActivityLogin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:background="#fff"
         android:text="Cadastrar"
-        app:layout_constraintEnd_toEndOf="@+id/btnEntrar"
-        app:layout_constraintStart_toStartOf="@+id/btnEntrar"
-        app:layout_constraintTop_toBottomOf="@+id/btnEntrar" />
+        app:layout_constraintEnd_toEndOf="@+id/btnEntrarActivityLogin"
+        app:layout_constraintStart_toStartOf="@+id/btnEntrarActivityLogin"
+        app:layout_constraintTop_toBottomOf="@+id/btnEntrarActivityLogin" />
 
     <EditText
-        android:id="@+id/edtUsuario"
+        android:id="@+id/edtUsuarioActivityLogin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -72,18 +72,20 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <EditText
-        android:id="@+id/edtSenha"
+        android:id="@+id/edtSenhaActivityLogin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:backgroundTint="#fff"
         android:ems="10"
+        android:hint="Digite sua senha"
         android:inputType="textPassword"
         android:textAlignment="center"
         android:textColor="#fff"
-        app:layout_constraintEnd_toEndOf="@+id/edtUsuario"
-        app:layout_constraintStart_toStartOf="@+id/edtUsuario"
-        app:layout_constraintTop_toBottomOf="@+id/edtUsuario" />
+        android:textColorHint="#fff"
+        app:layout_constraintEnd_toEndOf="@+id/edtUsuarioActivityLogin"
+        app:layout_constraintStart_toStartOf="@+id/edtUsuarioActivityLogin"
+        app:layout_constraintTop_toBottomOf="@+id/edtUsuarioActivityLogin" />
 
     <TextView
         android:id="@+id/textView"
@@ -93,6 +95,6 @@
         app:layout_constraintBottom_toTopOf="@+id/imageView4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnCadastrar" />
+        app:layout_constraintTop_toBottomOf="@+id/btnCadastrarActivityLogin" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
