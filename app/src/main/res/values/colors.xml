@@ -6,4 +6,5 @@
 
 
     <color name="colorBackground">#25367c</color>
+    <color name="colorDarkBackground">#1A2A63</color>
 </resources>
